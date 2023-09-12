@@ -1,0 +1,26 @@
+#include<stdio.h>
+
+int main(){
+//program for calculating the odd digits in a number given by the user
+    int n;
+    int sum = 0; // 
+    printf("PROGRAM FOR SUM OF ODD DIGITS IN NUMBER\n ");
+    printf("Enter The Number: "); 
+    scanf("%d", &n); // Read an integer from the user and store it in the variable n
+    
+    int ldigtit = 0; // Initialize a variable to store the last digit
+    
+    // Loop through the digits of the input number until it becomes 0
+    while(n != 0){
+        ldigtit = n % 10; // Get the last digit of n using the modulo operator
+        n = n / 10; // Remove the last digit from n and so on till becomes 0;
+        
+        // Check if the last digit is odd (not divisible by 2) and not equal to 1
+        if(ldigtit % 2 != 0 && ldigtit != 1){ //ldigtit != 1 because 1 is not a prime and not a composite number..
+            sum = sum + ldigtit; // Add the odd digit to the sum
+        }
+    }
+   
+    printf("SUM IS %d\n", sum); // Print the sum of the odd digits excluding 1
+    return 0;
+}
