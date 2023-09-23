@@ -1,0 +1,18 @@
+#include <stdio.h>
+
+int main() {
+    int n; 
+    printf("Enter your ATM PIN: ");
+    scanf("%d", &n);
+   
+do
+{
+    printf("ENTER CORRECT PIN:");
+    scanf("%d",&n);
+} while (n!=4242); //atm pin if correct show balance
+
+printf("Your Balance Is 1155\n");
+printf("----Don't Share ATM Pin With Strangers---- \n");
+printf("----Thank You For Banking----");
+return 0;
+}
