@@ -1,4 +1,4 @@
-// question transpose the array n*n;
+// question transpose the array n*n and rotate 90deg;
 #include <stdio.h>
 int main()
 {
